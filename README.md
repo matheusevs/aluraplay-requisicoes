@@ -7,12 +7,18 @@
 
 ## Tecnologias utilizadas durante o curso
 * Javascript
-* NodeJS
-* Json-server
+* <a href="https://nodejs.org/en/">NodeJS</a>
+* <a href="https://www.npmjs.com/package/json-server">Json-server</a>
 
 ## Tecnologias utilizadas no projeto
 * HTML
 * CSS
+
+## Orientações
+```bash
+npm install
+json-server --watch db.json
+```
 
 ## Screenshots
 ![Screenshot da tela inicial do AluraPlay](https://imgur.com/aymxEsh.png)
