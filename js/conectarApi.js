@@ -31,4 +31,5 @@ async function buscarVideo(termoDeBusca)
 export const conectarApi = {
     listarVideos,
     criarVideo,
+    buscarVideo,
 }
