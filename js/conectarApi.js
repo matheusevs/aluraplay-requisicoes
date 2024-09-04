@@ -19,6 +19,10 @@ async function criarVideo(titulo, descricao, url, imagem)
         }),
     });
 
+    if (!conexao.ok) {
+        throw new Error("Não foi possível enviar o vídeo");
+    }
+
     return await conexao.json();
 }
 

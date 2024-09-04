@@ -10,10 +10,14 @@ async function criarVideo(event)
     const descricao = Math.floor(Math.random() * 10).toString();
     const url = document.querySelector("[data-url]").value;
     const imagem = document.querySelector("[data-imagem]").value;
+    
+    try {
+        await conectarApi.criarVideo(titulo, descricao, url, imagem);
 
-    await conectarApi.criarVideo(titulo, descricao, url, imagem);
-
-    window.location.href = "../pages/envio-concluido.html";
+        window.location.href = "../pages/envio-concluido.html"; 
+    } catch (error) {
+        alert(error)
+    }
 }
 
 formulario.addEventListener("submit", event => criarVideo(event));
